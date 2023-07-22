@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Título que se mostrará en la pestaña</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--Este es un comentario. 
+        En body se pone todo lo que queremos que se vea en la pág. web-->
+    <h1>Título más grande (h1), los títulos van de menor a mayor h1-h6, h6 será el título más pequeño.</h1>
+    <p>Sin embargo, estos tamaños luego pueden ser modificados a través de CSS</p>
+    <h3>Hola este es h3</h3>
+    <br /> <!--Este es un salto de línea-->
+    <h5>Hola, este es h5</h5>
+    <hr/> <!--Esta etiqueta nos permite agregar una línea separadora en la página web-->
+    <h2>¿Cómo poner párrafos?</h2>
+    <!--Usamos <p>
+                    parrafo
+                   </p>-->
+    <p>Este es un ejemplo de párrafo: <br />
+        Nota: solo se puede usar un h1 por página, pero podemos usar h2-h6 tantas veces como se requiera.</p>
+    <h2>¿Cómo poner letras en negritas?</h2>
+    <!--Lo que hacemos es usar <b>
+                                    texto en negritas    
+                                </b>
+        o también se puede usar <strong>
+                                texto en negritas pero con significado para el navegador
+                                </strong>
+        La diferencia radica en el énfasis que el navegador hará sobre <strong>, será reconocido algo así como una palabra clave
+        aquel texto que este entre la etiqueta <strong> por otro lado, la etiqueta <b> solo tiene apariencia de negritas. 
+        NOTA: no abusar del uso de strong ya que puede haber penalizaciones-->
+    <p>En esta pequeña página web trataré de hacer algunas notas sobre mi primer acercamiento con <strong>HTML</strong>
+        ya que estoy haciendo un <b>curso básico</b> y quiero poner en práctica mi conocimiento.</p>
+    <h2>¿Cómo poner letras en itálica?</h2>
+    <!--Usamos <i>
+                texto en itálica
+               </i>-->
+    <p>En este ejemplo se puede ver la aplicación de las letras en <i>itálica</i></p>
+    <h2>¿Cómo citar?</h2>
+    <!--Usamos <blockquote> para la cita en sí y usamos <cite> para escribir el autor de la cita-->
+    <p>En el siguiente párrafo me citaré a mí misma: <br/>
+    <blockquote>Me llamo Esmeralda soy mexicana y tengo 19 años, actualmente estoy estudiando Ciencia de Datos en <br/> 
+        ESCOM (Escuela Superior de Cómputo).
+    </blockquote>
+    <cite>Esmeralda L.</cite>
+    </p>
+    <h2>¿Cómo agregar links a nuestra página web?</h2>
+    <!--Hay dos tipos de rutas:
+    ABSOLUTA: url predifinida y externa, como Youtube
+    RELATIVA: ruta que se encuentra dentro de nuestra computadora, no se usan url's-->
+    <a href = "https://www.youtube.com">Este es un link a Youtube</a> <!--Ejemplo ruta absoluta-->
+    <br/>
+    <a href = "ai.png">Imagen de Ai</a> <!--Ejemplo de ruta relativa-->
+    <h3>Agregar target para que no se cierre el sitio al momento de abrir un link</h3>
+    <p>Cuando entramos al link de Youtube, se abre en la misma pestaña donde está la página web,
+    para que esto no pase y cuando se abra el link de Youtube, se abra otra pestaña, agregamos target. </p>
+    </p>
+    <a target="_blank" href = "https://www.youtube.com">Este es un link a Youtube que se abre en otra pestaña</a>
+
+    <!--Tipos de enlaces
+
+    Es importante saber que hay enlaces hacia una hoja CSS o un script de JavaScript, los cuales se pueden 
+    aplicar de la siguiente forma:
+
+    Para java, se usa <script></script> y para CSS <link rel="stylesheet" href="estilos.css"
+    NOTA: estos enlaces se agregan en <head> -->
+    
+    <h2>¿Cómo agregar un icono?</h2>
+    <p>
+    Lo hacemos a través de un link (link rel="shortcut icon" type="image/x-icon" href="favicon.ico") el cual debe ir en el head. 
+    La imagen tiene que tener la extensión .icon
+    </p>
+    <hr/>
+    <h2>Listas</h2>
+    <h3>1. Lista desordenada</h3>
+    <ul> <!--Esta es la lista desordenada <UL> -->
+            <li>Item 1</li> <!--Items de la lista desordenada-->
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <ul>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </ul>
+    </ul>
+
+    <h3>2. Lista ordenada</h3> <!--Esta es la lista ordenada <OL> -->
+    <ol>
+            <li>Item 1</li> <!--Items de la lista ordenada-->
+            <ol>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </ol>
+            <a target="_blank" href="https://www.google.com.mx"><li>Item 2</li></a>
+            <li>Item 3</li>
+            <ul>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </ul>
+    </ol>
+    <hr/>
+
+    <h2>Imágenes</h2>
+    <img src="ai.png" width="450" height="250" alt="Hoshino Ai" title="Heart Ai"/> 
+    <!--el alt sirve para cuando la imágen no aparece en la página y en su lugar aparecerá "Hoshino Ai"-->
+    <!--SIEMPRE PONER LOS ALT'S-->
+    <!--title muestra el texto cuando se pasa el cursor por encima de la imágen-->
+    <br/>
+    <p>
+        También podemos poner una imágen con rutas absolutas, es decir hacer uso de otras páginas para poner imágenes,
+        sin embargo esto tiene como problema que si el sitio elimina la imagen que usamos, entonces ya no aparecerá.
+    </p>
+    
+    <img src = "https://static.zerochan.net/Hoshino.Ai.full.3944152.jpg" width = "500" alt="Hoshino Ai" title="Album Ai" />
+    <br/>
+
+    <hr/>
+    <h2>Tablas</h2>
+    <table>
+        <tr> 
+            <td>Item 1</td> 
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+
+        <tr> 
+            <td>Item 5</td>
+            <td>Item 6</td>
+            <td>Item 7</td>
+            <td>Item 8</td>
+        </tr>
+
+        <tr>
+            <td>Item 9</td>
+            <td>Item 10</td>
+            <td>Item 11</td>
+            <td>Item 12</td>
+        </tr>
+    </table>
+    <hr/>
+    <h2>Formularios</h2>
+    <form>
+        <h3>Inputs</h3>
+
+        <h4>Text</h4>
+        <label for="name">Ingrese su nombre: </label>
+        <input type="text" placeholder="Nombre" maxlength="20" id="name" name="nombre_user"> 
+        <!--el id se usa en el label para especificar el campo, name es como se le conocerá a este campo en el server-->
+        <br/>
+
+        <h4>Email</h4>
+        <p>Lo que hace este tipo de input es verificar si el usuario ingresó una dirección válida de correo electrónico</p>
+        <label for="idmail">Correo Electrónico: </label>
+        <input type="email" id="idmail">
+        <br/>
+
+        <h4>Password</h4>
+        <label for="id_pwd">Contraseña: </label>
+        <input type="password" id="id_pwd">
+        <br/>
+
+        <h4>Buttons</h4>
+        <p>Este tipo de botón no envía la información a otro lugar, solo funciona para acciones dentro de la página</p>
+        <input type="button" value="Confirmar"> <!--value será el nombre que tendrá el botón en la página-->
+        <br/>
+        <p>Este botón (en realidad sería un submit) si envía la información a otro lado</p>
+        <input type="submit" value="Enviar"> <!--value será el nombre que tendrá el botón en la página-->
+    
+
+    </form>
+</body>
+
+</html>
